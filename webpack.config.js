@@ -11,16 +11,12 @@ module.exports = {
   ],
   output: {
     path: __dirname + '/dist',
-    filename: "index_bundle.js",
+    filename: 'index_bundle.js',
   },
   module: {
     loaders: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: "babel-loader",
-      }
-    ]
+      { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader', },
+    ],
   },
-  plugins: [HtmlWebpackPluginConfig]
+  plugins: [HtmlWebpackPluginConfig],
 };
